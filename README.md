@@ -44,8 +44,15 @@ By: Andrew Mullen
   - Once the Auto-scaling group environment was created. The JMeter tests were rerun, 1000 requests per second, to see if the auto-scaling group would handle the maximum expected requests.  Below are the results.
 	- 1000: 0 errors    
 	
-- What are the economic benefits of using auto-scaling and an ALB vs a stronger instance with more bandwidth (Like a c5.4xlarge)?
+- What are the financial advantages of using auto-scaling and an ALB over a more powerful instance with more bandwidth (such as a c5.4xlarge)?
+- The following are just a few of the economic advantages of using auto-scaling and ALB over a stronger instance.
+	- Infrastructure is only used when it is required: Auto-scaling includes features that allow you to schedule and set thresholds for when to add additional instances.
+  	- Price:
+		- c5.4xlarge: $0.91 per hour, $665.76 per month.
+		- t2.micro: $0.0116 per hour, or approximately $8.70 per month.
+	- Automated: Auto-scaling occurs automatically, which is critical for support.
+ 
+- In summary, because we will only need the increased capacity for 12 days out of the year, it is best to only use what we need when we need it rather than relying on our ability to spin up a new instance quickly.
 
-- 
 # Diagram:
 Click to see the visual diagram [HERE](https://github.com/andmulLABS01/Blitz3/blob/main/Blitz3.drawio.png)
